@@ -1,0 +1,7 @@
+@"
+config.env
+.gopath/
+.gomodcache/
+android/.gradle/
+android/**/build/
+"@ | Set-Content .gitignore

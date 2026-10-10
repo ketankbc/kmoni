@@ -1,0 +1,8 @@
+services:
+  kmoni:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - ./config.env
+    ports:
+      - "8080:8080"

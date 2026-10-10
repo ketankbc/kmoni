@@ -1,0 +1,14 @@
+.git
+.gitignore
+.dockerignore
+android/
+cmd/
+config.env
+README.md
+*.iml
+.gradle/
+build/
+**/build/
+local.properties
+.gopath/
+.gomodcache/
