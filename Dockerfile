@@ -7,5 +7,5 @@ RUN CGO_ENABLED=0 go build -trimpath -ldflags='-s -w' -o /out/kmoni ./server
 FROM gcr.io/distroless/static-debian12
 COPY --from=build /out/kmoni /kmoni
 USER nonroot:nonroot
-EXPOSE 8080
+EXPOSE 8081
 ENTRYPOINT ["/kmoni"]
